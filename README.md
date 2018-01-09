@@ -1,4 +1,11 @@
 <html>
+<head>
+ <style type="text/css">
+  #test{
+    width:100px;height:100px;position:relative;margin-left:100px;margin-top:100px;
+  }
+ </style>
+</head>
 <body>
 <script type="text/javascript">
 let elem = document.getElementById("test");
