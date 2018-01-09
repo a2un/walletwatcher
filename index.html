@@ -1,12 +1,19 @@
 <html>
+ <head>
+  <script type="text/javascript" src="./scripts/scripts.js" />
+ </head>
 <body>
 <script type="text/javascript">
 let elem = document.getElementById("test");
 elem.addEventListener('click', function(){
  console.log('this is clicked');
-});
+},false);
 </script>
 This is test 
  <input id="test" type="button" value="testing alert" onclick="alert()"/>
-</body>
+<table id="outside">
+    <tr><td id="t1">one</td></tr>
+    <tr><td id="t2">two</td></tr>
+</table>
+ </body>
 </html>
