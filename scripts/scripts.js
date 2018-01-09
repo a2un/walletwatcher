@@ -1,4 +1,4 @@
-// Function to change the content of t2
+window.onload = (() => {// Function to change the content of t2
 function modifyText() {
   var t2 = document.getElementById("t2");
   if (t2.firstChild.nodeValue == "three") {
@@ -11,3 +11,4 @@ function modifyText() {
 // add event listener to table
 var el = document.getElementById("outside");
 el.addEventListener("click", modifyText, false);
+})();
