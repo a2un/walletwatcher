@@ -3,17 +3,31 @@
   <script type="text/javascript" src="./scripts/scripts.js"></script>
  </head>
 <body>
-<script type="text/javascript">
-let elem = document.getElementById("test");
-elem.addEventListener('click', function(){
- console.log('this is clicked');
-},false);
-</script>
 This is test 
  <input id="test" type="button" value="testing alert" onclick="alert()"/>
 <table id="outside">
     <tr><td id="t1">one</td></tr>
     <tr><td id="t2">two</td></tr>
 </table>
+ 
+ <script type="text/javascript">
+let elem = document.getElementById("test");
+elem.addEventListener('click', function(){
+ console.log('this is clicked');
+},false);
+ 
+ function modifyText() {
+  var t2 = document.getElementById("t2");
+  if (t2.firstChild.nodeValue == "three") {
+    t2.firstChild.nodeValue = "two";
+  } else {
+    t2.firstChild.nodeValue = "three";
+  }
+}
+
+// add event listener to table
+var el = document.getElementById("outside");
+el.addEventListener("click", modifyText, false);
+</script>
  </body>
 </html>
