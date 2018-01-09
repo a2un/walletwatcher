@@ -13,6 +13,7 @@ elem.addEventListener('click', function(){
  console.log('this is clicked');
 });
 </script>
-This is test <inout id="test" type="button" value="testing alert" onclick="alert()"/>
+This is test 
+ <input id="test" type="button" value="testing alert" onclick="alert()"/>
 </body>
 </html>
