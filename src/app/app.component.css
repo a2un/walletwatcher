@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  table
+  {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  }
+  table, th, td
+  {
+  padding: 5px;
+  border: 1px solid black;
+  }
+
+  .mat-sort-header-container {
+    align-items: center;
+  }
